@@ -1,0 +1,58 @@
+const experiences = [
+  {
+    id:"1",
+    title: "Kayaking",
+    location: "Uttara Karnataka",
+    description: "Experience a kayaking adventure across beautiful backwaters and scenic rivers",
+    price: 999,
+    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop",
+    rating: 4.8,
+  },
+  {
+    id:"2",
+    title: "Nandi Hills Sunrise",
+    location: "Bangalore",
+    description: "Witness the breathtaking sunrise at Nandi Hills with professional guides",
+    price: 899,
+    image: "https://images.unsplash.com/photo-1495954484750-af469f2f9be5?w=400&h=300&fit=crop",
+    rating: 4.9,
+  },
+   {
+    id:"3",
+    title: "Coffee Trail",
+    location: "Coorg",
+    description: "Explore the aromatic coffee plantations of Coorg with a local expert guide",
+    price: 1299,
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+    rating: 4.7,
+  },
+   {
+    id:"4",
+    title: "Boat Cruise",
+    location: "Bangalore",
+    description: "Enjoy a relaxing boat cruise with stunning views and local cuisine onboard",
+    price: 999,
+    image: "https://images.unsplash.com/photo-1474690455603-a369ec1293f9?w=400&h=300&fit=crop",
+    rating: 4.6,
+  },
+   {
+    id:"5",
+    title: "Bungee Jumping",
+    location: "Rishikesh",
+    description: "Take the ultimate leap with India's highest bungee jump experience",
+    price: 999,
+    image: "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=400&h=300&fit=crop",
+    rating: 4.8,
+  },
+   {
+    id:"6",
+    title: "Coffee Trail Walk",
+    location: "Coorg",
+    description: "Walk through lush green coffee estates and learn about coffee cultivation",
+    price: 1299,
+    image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop",
+    rating: 4.7,
+  },
+];
+
+module.exports = experiences;

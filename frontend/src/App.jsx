@@ -1,42 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Home from './Pages/Home'
+import PlaceDetails from './Pages/PlaceDetails'
 
-function App() {
-  const [message, setMessage] = useState('');
-  const [input, setInput] = useState('');
-
-  // GET request
-  useEffect(() => {
-    axios.get('http://localhost:5000/api/message')
-      .then(res => setMessage(res.data.message))
-      .catch(err => console.error(err));
-  }, []);
-
-  // POST request
-  const sendData = async () => {
-    try {
-      const res = await axios.post('http://localhost:5000/api/data', { text: input });
-      console.log(res.data);
-      alert('Data sent successfully!');
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
+const App = () => {
   return (
-    <div style={{ padding: '30px' }}>
-      <h2>Backend says:</h2>
-      <p>{message}</p>
-
-      <input
-        type="text"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        placeholder="Type something..."
-      />
-      <button onClick={sendData}>Send to Backend</button>
-    </div>
-  );
+    // <Routes>
+    //   <Route path='/' element={<Home/>}/>
+    //   <Route path='/place/:id' element={<PlaceDetails/>} />
+    // </Routes>
+    <PlaceDetails />
+  )
 }
 
-export default App;
+export default App
